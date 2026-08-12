@@ -1,378 +1,267 @@
-# ShopEase — Enterprise Marketplace Platform
+# 🛍️ ShopEase — Enterprise Marketplace Platform
 
-An enterprise-grade e-commerce marketplace built with React 19, ASP.NET Core 8, and SQL Server.  
-Users can buy and sell items through a unified account system.
+[![Build Status](https://img.shields.io/badge/Docker-Ready-brightgreen)](#-getting-started)
+[![Frontend](https://img.shields.io/badge/Frontend-React_19_%2B_Vite_6-61dafb)](Frontend)
+[![Backend](https://img.shields.io/badge/Backend-.NET_8.0_Web_API-512bd4)](Backend)
+[![Database](https://img.shields.io/badge/Database-SQL_Server_2022_/_EF_Core_8-CC292B)](#-database)
+[![Auth](https://img.shields.io/badge/Auth-JWT_%2B_BCrypt-black)](#-architecture-overview)
 
----
-
-## Tech Stack
-
-| Layer        | Technology                                  |
-|--------------|---------------------------------------------|
-| Frontend     | React 19, Vite 6, Tailwind CSS 3            |
-| Backend      | ASP.NET Core 8 Web API (Onion Architecture) |
-| ORM          | Entity Framework Core 8                     |
-| Database     | SQL Server 2022                             |
-| Auth         | JWT (15 min) + Refresh Tokens (7 days)      |
-| Containers   | Docker + Docker Compose                     |
-| Email (dev)  | Mailtrap SMTP sandbox                       |
+Welcome to **ShopEase**, an enterprise-grade e-commerce marketplace platform engineered with **ASP.NET Core 8 Web API** and **React 19**. Designed around Onion Architecture and a unified account model, ShopEase enables seamless multi-vendor buying and selling experiences.
 
 ---
 
-## Port Reference
+## 🏗️ Architecture Overview
 
-| Service        | Local Dev                          | Docker (Compose)               |
-|----------------|-------------------------------------|--------------------------------|
-| Frontend       | http://localhost:5173               | http://localhost:80            |
-| Backend API    | http://localhost:5000               | http://localhost:5000          |
-| Swagger UI     | http://localhost:5000/swagger       | http://localhost:5000/swagger  |
-| Health Check   | http://localhost:5000/health        | http://localhost:5000/health   |
-| SQL Server     | localhost:1433                      | localhost:1433                 |
+The system is architected using **Onion Architecture** and the **Generic Repository Pattern**, cleanly separating domain models, application logic, data persistence, and HTTP presentation layers.
 
-> **Note:** The backend runs inside the container on port `8080`; Docker maps it to `5000` externally.
+```mermaid
+graph TD
+    subgraph "Frontend Layer (React 19 + Vite 6)"
+        UI[App Shell / Layouts: Marketplace & Admin] --> FM[Feature Modules: Listings / Cart / Orders / Admin / Auth]
+        FM --> Stores[Zustand Stores: Auth / Cart / Wishlist]
+        FM --> ReactQuery[React Query & Custom Hooks]
+        ReactQuery --> AxiosClient[Axios Client + Refresh Token Interceptors]
+    end
+
+    subgraph "Backend API Layer (.NET 8.0)"
+        Controllers[API Controllers v1] --> Application[Application Services & FluentValidation]
+        Application --> Repos[Generic Repository: IRepository<T>]
+        Repos --> EFCore[Entity Framework Core 8 / DbContext]
+        EFCore --> SQLDB[(SQL Server 2022 / Azure SQL)]
+        Controllers --> Middleware[Global Exception & Serilog Middleware]
+    end
+
+    subgraph "Infrastructure & Services"
+        Uploads[Local Media Storage / wwwroot/uploads]
+        Email[Mailtrap SMTP / Console Email Service]
+        JWT[JWT Authentication & BCrypt Password Hashing]
+    end
+
+    AxiosClient -.-> Controllers
+    Application -.-> Uploads
+    Application -.-> Email
+    Controllers -.-> JWT
+```
+
+### Key Highlights & Features
+- **Unified Account Model**: Single user authentication model support (`Personal` & `Business` accounts). Every user has universal capabilities to buy and list products.
+- **Dynamic Category Attributes Engine**: Flexible dynamic category attribute fields (`CategoryAttribute`, `AttributeOption`, `ListingAttributeValue`) supporting conditional visibility rules and custom field rendering.
+- **Robust Security & RBAC**: Dual-token strategy with 15-minute access tokens and 7-day refresh tokens, BCrypt password hashing, and client/server role-based authorization (`User`, `Admin`).
+- **Complete Marketplace Lifecycle**: Advanced product search, dynamic multi-attribute filtering, rich multi-image upload, cart drawer, checkout, order tracking, and administrative moderation dashboard.
+- **Standardized API Envelope & Soft Deletes**: Universal `ApiResponse<T>` wrapping, paginated `PagedResult<T>` structures, and global soft-delete query filters (`BaseEntity.IsDeleted`).
 
 ---
 
-## Prerequisites
+## 🛠️ Technology Stack
 
-| Tool           | Version  | Required for     |
-|----------------|----------|------------------|
-| Node.js        | 20+      | Frontend         |
-| .NET SDK       | 8.0+     | Backend          |
-| SQL Server     | 2022     | Database (local) |
-| Docker Desktop | latest   | Containerized run|
+| Layer | Technologies Used |
+| :--- | :--- |
+| **Frontend** | React 19, Vite 6, Tailwind CSS 3, Zustand, TanStack React Query, React Hook Form, Zod, Axios, Lucide Icons |
+| **Backend** | ASP.NET Core 8 Web API, C#, Entity Framework Core 8, FluentValidation, Serilog |
+| **Architecture** | Onion Architecture (Domain, Application, Infrastructure, API), Generic Repository Pattern |
+| **Database** | Microsoft SQL Server 2022 / Azure SQL Server (`ShopEaseDb`) |
+| **Authentication** | JWT (JSON Web Tokens) + Refresh Tokens, BCrypt Password Hashing (`BcryptPasswordHasher`) |
+| **Storage & Media** | ASP.NET Core Static File Server (`wwwroot/uploads`) & `LocalFileStorageService` |
+| **Email Service** | Mailtrap SMTP Sandbox / `ConsoleEmailService` |
+| **Containers** | Docker, Docker Compose, Nginx (Production Reverse Proxy & SPA Fallback) |
 
 ---
 
-## Quick Start
+## 📁 Repository Directory Structure
 
-### Option 1: Docker (Recommended — zero local dependencies)
+```text
+shop-ease/
+├── Backend/                      # ASP.NET Core 8 Web API Solution
+│   ├── Dockerfile                # Multi-stage container build (.NET 8 SDK -> Runtime)
+│   └── src/
+│       ├── EBayClone.API/        # REST Controllers, Serilog, Middleware, Swagger UI, DI Setup
+│       ├── EBayClone.Application/# Business Logic, Services, DTOs, FluentValidation
+│       ├── EBayClone.Infrastructure/# EF Core DbContext, Repositories, JWT, Storage, Email
+│       └── EBayClone.Domain/     # Entities, Enums, Interfaces (IRepository<T>)
+├── Frontend/                     # React 19 SPA (Vite 6 + Tailwind CSS)
+│   ├── Dockerfile                # Multi-stage container build (Node -> Nginx)
+│   ├── nginx.conf                # Nginx SPA fallback routing & /api proxy setup
+│   └── src/
+│       ├── app/                  # Router setup & main application shell
+│       ├── components/           # Reusable UI components (Buttons, Inputs, Modals, Badges)
+│       ├── constants/            # API Endpoints, App Routes, Enum definitions
+│       ├── features/             # Modular features (listings, auth, cart, orders, admin)
+│       ├── layouts/              # MarketplaceLayout & AdminLayout
+│       ├── services/             # Axios API instance & HTTP interceptors
+│       ├── store/                # Zustand global state (authStore, cartStore, wishlistStore)
+│       └── utils/                # Date/Currency formatters & asset URL helpers
+├── docs/                         # Comprehensive Technical Documentation
+│   ├── api-contract.md           # Endpoint definitions & request/response shapes
+│   ├── architecture.md           # Onion layer breakdown & sequence diagrams
+│   ├── database.md               # Schema definitions, migrations & ER notes
+│   ├── design.md                 # Design system tokens & UI rules
+│   └── setup.md                  # Detailed environment configuration guide
+├── postman/                      # Postman API Collection & environment files
+├── docker-compose.yml            # Multi-container orchestration (SQL Server + API + Web)
+└── .env.example                  # Root Environment Template
+```
+
+---
+
+## 🌐 Port Reference
+
+| Service | Local Dev | Docker Compose |
+| :--- | :--- | :--- |
+| **Frontend SPA** | `http://localhost:5173` | `http://localhost:80` |
+| **Backend API** | `http://localhost:5000` | `http://localhost:5000` *(maps container 8080)* |
+| **Swagger UI** | `http://localhost:5000/swagger` | `http://localhost:5000/swagger` |
+| **Health Check** | `http://localhost:5000/health` | `http://localhost:5000/health` |
+| **SQL Server** | `localhost:1433` | `localhost:1433` |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
+- [Node.js (v20+)](https://nodejs.org/) & `npm`
+- Microsoft SQL Server 2022 or SQL Server LocalDB
+- *(Optional)* [Docker Desktop](https://www.docker.com/) for containerized deployment
+
+---
+
+### Option 1: Docker Compose (Recommended)
+
+Run the full stack with zero manual local configuration:
 
 ```bash
-# 1. Copy environment file
+# 1. Clone & copy environment template
 cp .env.example .env
 
-# 2. Start all services (SQL Server + Backend + Frontend)
+# 2. Start all services (SQL Server -> Backend API -> Frontend Nginx)
 docker-compose up -d
 
-# 3. Watch logs
+# 3. View backend logs
 docker-compose logs -f backend
 ```
 
-Services start in order: SQL Server → Backend (auto-migrates) → Frontend.
+Once running, access the web application at **`http://localhost`** and API documentation at **`http://localhost:5000/swagger`**.
 
-| URL                              | What                      |
-|----------------------------------|---------------------------|
-| http://localhost                 | Frontend                  |
-| http://localhost:5000/swagger    | API documentation         |
-| http://localhost:5000/health     | Health check              |
+---
 
-### Option 2: Local Development
+### Option 2: Local Development Setup
 
-#### 1. Backend
+#### 1. Backend Setup
 
 ```bash
+# Navigate to Backend directory
 cd Backend
 
-# Restore packages
+# Restore dependencies
 dotnet restore
 
-# Run in Development mode (port 5000)
+# Run API Server (Runs on http://localhost:5000)
 dotnet run --project src/EBayClone.API
 ```
 
-The API **auto-migrates and seeds** on first startup — no manual `dotnet ef database update` needed.
+> **Note**: The backend automatically applies database migrations and seeds initial database records on startup.
 
-To apply migrations manually (CI or fresh DB):
-
+To apply database migrations manually:
 ```bash
 dotnet ef database update \
   --project src/EBayClone.Infrastructure \
   --startup-project src/EBayClone.API
 ```
 
-#### 2. Frontend
+#### 2. Frontend Setup
 
 ```bash
+# Navigate to Frontend directory
 cd Frontend
 
-# Copy env file
-cp .env.example .env    # or use .env.development (auto-loaded by Vite)
+# Create local environment configuration
+cp .env.example .env
 
-# Install dependencies
+# Install Node dependencies
 npm install
 
-# Start dev server (port 5173, proxies /api/* to localhost:5000)
+# Start Vite development server (Runs on http://localhost:5173)
 npm run dev
 ```
 
-Vite's dev proxy forwards all `/api/*` requests to `VITE_API_BASE_URL` (default `http://localhost:5000`),  
-so the frontend never hits CORS issues during development.
-
 ---
 
-## Environment Variables
+## ⚙️ Environment Variables
 
-### Root `.env` — Docker Compose
-
-Copy `.env.example` to `.env` and fill in values before running Docker Compose.
+### Root `.env` (Docker Compose)
 
 ```env
-# Database
-DB_SERVER=localhost
+# Database Settings
+DB_SERVER=sqlserver
 DB_PORT=1433
 DB_NAME=ShopEaseDb
 DB_USER=sa
 DB_PASSWORD=YourStrong@Passw0rd
 
-# JWT
+# JWT Security Settings
 JWT_SECRET=replace-with-a-secret-at-least-32-characters-long
 JWT_ISSUER=ShopEaseApi
 JWT_AUDIENCE=ShopEaseFrontend
 JWT_EXPIRY_MINUTES=15
 JWT_REFRESH_EXPIRY_DAYS=7
 
-# URLs
+# Application URLs
 FRONTEND_URL=http://localhost:5173
 BACKEND_URL=http://localhost:5000
 
-# Runtime
+# Runtime Environments
 ASPNETCORE_ENVIRONMENT=Development
 NODE_ENV=development
 ```
 
-### Backend — `appsettings.*.json`
+---
 
-| File                          | Purpose                                      |
-|-------------------------------|----------------------------------------------|
-| `appsettings.json`            | Base config (CORS, JWT structure, Serilog)   |
-| `appsettings.Development.json`| Dev overrides: Debug logging, Mailtrap SMTP  |
-| `appsettings.Production.json` | Prod overrides: Warning-level logs, 15-min JWT|
+## 📡 API Documentation & Key Endpoints
 
-In production/Docker, secrets are injected via **environment variables** using ASP.NET Core's double-underscore convention:
+Interactive Swagger API documentation is available at **`/swagger`** in all environments.
 
-```
-ConnectionStrings__DefaultConnection=Server=...
-JwtSettings__Secret=your-secret
-CorsSettings__AllowedOrigins=https://your-frontend.com
-SmtpSettings__Host=smtp.sendgrid.net
-```
+| Method | Endpoint | Auth Required | Description |
+| :--- | :--- | :--- | :--- |
+| `POST` | `/api/v1/auth/register` | No | Register a new user account |
+| `POST` | `/api/v1/auth/login` | No | Authenticate user & issue tokens |
+| `POST` | `/api/v1/auth/refresh` | No | Refresh expired access token |
+| `GET` | `/api/v1/listings` | No | Search & filter product listings (paginated) |
+| `POST` | `/api/v1/listings` | Required | Create a new product listing |
+| `GET` | `/api/v1/orders` | Required | Fetch current user order history |
+| `POST` | `/api/v1/cart/checkout` | Required | Checkout active shopping cart |
+| `GET` | `/health` | No | System health check endpoint |
 
-Never commit real production secrets — use environment variables or a secrets manager.
-
-### Frontend — `.env.*`
-
-| File                  | Loaded by Vite when                   |
-|-----------------------|---------------------------------------|
-| `.env`                | All environments (lowest priority)    |
-| `.env.development`    | `vite dev` (development mode)         |
-| `.env.production`     | `vite build` (production build)       |
-
-```env
-VITE_API_BASE_URL=http://localhost:5000   # Backend base URL
-VITE_APP_NAME=ShopEase
-VITE_APP_VERSION=1.0.0
-```
-
-All frontend env vars must be prefixed `VITE_` to be accessible in browser code.
+All listing endpoints support standard query parameters: `page`, `pageSize`, `sortBy`, and `sortDirection`. All API responses return standard `ApiResponse<T>` envelopes.
 
 ---
 
-## Development Environment Details
+## 🔒 Default Credentials
 
-### Backend
-
-- **Environment**: `ASPNETCORE_ENVIRONMENT=Development`
-- **Port**: `http://localhost:5000`
-- **Logging**: Debug level; EF SQL commands logged at Information
-- **Email**: Mailtrap SMTP sandbox (no real emails sent)
-- **Swagger**: Available at `/swagger`
-- **Auto-migrate**: Yes, on every startup
-- **Seed data**: Admin user, 8 categories, sample listings
-
-### Frontend
-
-- **Port**: `http://localhost:5173`
-- **Hot reload**: Vite HMR enabled
-- **API proxy**: `/api/*` → `http://localhost:5000`
-- **Source maps**: Enabled
+| Role | Email | Password |
+| :--- | :--- | :--- |
+| **Admin** | `admin@shopease.com` | `Admin@123` |
+| **Standard User** | `user@shopease.com` | `User@123` |
 
 ---
 
-## Production Environment Details
+## 📚 Technical Documentation
 
-### Backend
+For in-depth operational and technical specifications, explore the [`docs/`](docs/) directory:
 
-- **Environment**: `ASPNETCORE_ENVIRONMENT=Production`
-- **Port**: Controlled by `ASPNETCORE_URLS` env var (container default: `8080`)
-- **Logging**: Warning level; no EF SQL command logging
-- **JWT expiry**: 15 min access / 7 day refresh
-- **Swagger**: Available at `/swagger` (accessible for API consumers)
-- **Static files**: Served from `wwwroot/uploads`
-
-### Frontend
-
-- Built with `npm run build` → static files served by Nginx
-- API base URL set at build time via `VITE_API_BASE_URL` Docker build arg
-- Nginx proxies `/api/*` to `http://backend:8080/api/` inside Docker network
-- All SPA routes fall back to `index.html`
-
-### Docker Production Overrides
-
-To run in production mode with Docker Compose:
-
-```bash
-# Create a production .env
-ASPNETCORE_ENVIRONMENT=Production
-DB_PASSWORD=<strong-password>
-JWT_SECRET=<min-32-char-secret>
-FRONTEND_URL=https://your-domain.com
-BACKEND_URL=https://api.your-domain.com
-
-docker-compose up -d
-```
-
----
-
-## Database
-
-- **Engine**: SQL Server 2022
-- **Default DB name**: `ShopEaseDb` (Docker) / `shopease-one` (Azure)
-- **Migrations**: Applied automatically on startup via `db.Database.MigrateAsync()`
-- **Seed data**:
-  - Admin user: `admin@shopease.com` / `Admin@123`
-  - Sample user: `user@shopease.com` / `User@123`
-  - 8 product categories with dynamic attribute definitions
-  - Sample listings
-
-Adding a new migration:
-
-```bash
-cd Backend
-dotnet ef migrations add <MigrationName> \
-  --project src/EBayClone.Infrastructure \
-  --startup-project src/EBayClone.API
-```
-
----
-
-## API Documentation
-
-Swagger UI: **`/swagger`** — available in all environments.
-
-Key endpoints:
-
-| Method | Endpoint                       | Auth     | Description                   |
-|--------|--------------------------------|----------|-------------------------------|
-| POST   | `/api/v1/auth/register`        | No       | Create account                |
-| POST   | `/api/v1/auth/login`           | No       | Authenticate, get tokens      |
-| POST   | `/api/v1/auth/refresh`         | No       | Refresh access token          |
-| GET    | `/api/v1/listings`             | No       | Browse listings (paginated)   |
-| POST   | `/api/v1/listings`             | Required | Create listing                |
-| GET    | `/api/v1/orders`               | Required | Order history                 |
-| POST   | `/api/v1/cart/checkout`        | Required | Checkout cart                 |
-| GET    | `/health`                      | No       | Health check                  |
-
-All list endpoints support: `page`, `pageSize`, `sortBy`, `sortDirection`, plus feature-specific filters.  
-All responses use `ApiResponse<T>` envelope. Paginated responses use `ApiResponse<PagedResult<T>>`.
-
----
-
-## Project Structure
-
-```
-shopease-one/
-├── .env.example                  # Docker Compose environment template
-├── docker-compose.yml            # Multi-service container setup
-├── CLAUDE.md                     # AI assistant context
-│
-├── Frontend/                     # React + Vite SPA
-│   ├── .env.example              # Frontend env template
-│   ├── .env.development          # Dev env (auto-loaded by Vite)
-│   ├── .env.production           # Prod env (auto-loaded by Vite build)
-│   ├── Dockerfile                # Multi-stage: Node build → Nginx serve
-│   ├── nginx.conf                # SPA fallback + /api proxy
-│   └── src/
-│       ├── app/Router.jsx        # All routes (lazy-loaded)
-│       ├── constants/            # API endpoints, routes, enums
-│       ├── services/api.js       # Axios instance with auth interceptor
-│       ├── store/                # Zustand stores (auth, cart, wishlist)
-│       ├── features/             # Feature modules (listings, orders, admin…)
-│       ├── layouts/              # MarketplaceLayout, AdminLayout
-│       ├── components/common/    # Shared UI components
-│       └── utils/                # Formatters, asset URL helpers
-│
-└── Backend/
-    ├── Dockerfile                # Multi-stage: .NET build → ASP.NET runtime
-    └── src/
-        ├── EBayClone.API/        # Controllers, middleware, Program.cs, DI wiring
-        │   ├── appsettings.json             # Base configuration
-        │   ├── appsettings.Development.json # Dev overrides
-        │   ├── appsettings.Production.json  # Prod overrides
-        │   └── Properties/launchSettings.json
-        ├── EBayClone.Application/  # Services, DTOs, validators, interfaces
-        ├── EBayClone.Infrastructure/ # EF Core, repositories, JWT, email
-        └── EBayClone.Domain/       # Entities, enums, IRepository<T>
-```
-
----
-
-## Default Credentials
-
-| Role  | Email                   | Password   |
-|-------|-------------------------|------------|
-| Admin | admin@shopease.com    | Admin@123  |
-| User  | user@shopease.com     | User@123   |
-
----
-
-## Documentation
-
-| File | Purpose |
-|------|---------|
-| [docs/setup.md](docs/setup.md) | Local, Docker, and Azure setup in detail |
-| [docs/architecture.md](docs/architecture.md) | Layer structure, sequence diagrams, ER summary, data flow |
-| [docs/api-contract.md](docs/api-contract.md) | All endpoints, DTOs, request/response shapes |
-| [docs/database.md](docs/database.md) | Entity schemas, enum values, EF configuration |
-| [docs/design.md](docs/design.md) | Tailwind tokens, component library, layout patterns |
-| [docs/requirements.md](docs/requirements.md) | Feature list, business rules, user roles |
-| [docs/coding-rules.md](docs/coding-rules.md) | Naming conventions, do/don't rules |
+- 📖 **[Architecture Guide](docs/architecture.md)** — Layer breakdown, sequence diagrams, and software patterns.
+- 🔌 **[API Contract](docs/api-contract.md)** — Complete REST endpoint specifications, request contracts, and error responses.
+- 🗄️ **[Database Documentation](docs/database.md)** — Entity schemas, EF Core configurations, and seed specifications.
+- 🎨 **[Design System](docs/design.md)** — UI tokens, color palettes, and component guidelines.
+- 🚀 **[Setup Guide](docs/setup.md)** — Extended local, Docker, and Azure deployment procedures.
 
 ### Postman Collection
-
-Import `postman/shopease.postman_collection.json` into Postman or Insomnia.
-
-Collection variables (`baseUrl`, `accessToken`, `refreshToken`, `userId`, `listingId`, `orderId`, `categoryId`) auto-populate from login/register responses via test scripts.
+Import `postman/shopease.postman_collection.json` into Postman to quickly test all API endpoints with pre-configured environment scripts.
 
 ---
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
-### Backend won't start — "Cannot open database"
-- Verify SQL Server is running and the connection string is correct
-- Docker: wait for `sqlserver` container to be healthy before starting `backend`
-- Check `logs/log-<date>.txt` for detailed error
-
-### Frontend shows blank page / 404 on refresh
-- If running behind Nginx: ensure `nginx.conf` has the SPA fallback (`try_files $uri /index.html`)
-- Local dev: `npm run dev` serves correctly; issue only occurs with static deployments
-
-### API returns 401 on all requests
-- Token may be expired — call `POST /api/v1/auth/refresh` with your refresh token
-- Verify `VITE_API_BASE_URL` points to the correct backend URL
-
-### Swagger not loading
-- Navigate to `http://localhost:5000/swagger` (not `/swagger/index.html`)
-- Ensure backend is running and `ASPNETCORE_ENVIRONMENT` is set
-
-### Docker Compose: "port already in use"
-- Stop local SQL Server service if running (`services.msc` on Windows)
-- `docker-compose down` then `docker-compose up -d`
-
-### CORS errors in browser
-- Ensure `CorsSettings__AllowedOrigins` includes your frontend URL exactly (no trailing slash)
-- Docker Compose sets this via `FRONTEND_URL` in `.env`
-
-### Email not sending (dev)
-- `appsettings.Development.json` uses Mailtrap — check Mailtrap inbox at https://mailtrap.io
-- Missing credentials: add `SmtpSettings__Username` and `SmtpSettings__Password` env vars
+- **Backend fails to connect to database**: Ensure SQL Server is running on port `1433`. When using Docker Compose, wait for the SQL Server container to become healthy before checking API logs.
+- **CORS Errors**: Verify `FRONTEND_URL` in `.env` or `CorsSettings:AllowedOrigins` in `appsettings.json` matches your frontend origin precisely without trailing slashes.
+- **Frontend 404 on refresh**: Ensure Nginx SPA fallback (`try_files $uri /index.html`) is active in production builds.
+- **401 Unauthorized errors**: Access tokens expire after 15 minutes. Ensure refresh token calls (`/api/v1/auth/refresh`) are firing automatically via Axios interceptors.
