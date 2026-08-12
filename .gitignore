@@ -13,6 +13,9 @@ Backend/**/.vs/
 Backend/**/*.user
 Backend/**/bin/
 Backend/**/obj/
+Backend/**/appsettings.Development.json
+Backend/**/appsettings.Production.json
+Backend/**/appsettings*.local.json
 
 # ===== Environment =====
 .env
