@@ -1,0 +1,2615 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "5.6.0.0",
+        "fileVersion": "5.6.0-2.26230.102 (caa81fa4971f74880cdab61990cb1b11420939ec)",
+        "semanticVersion": "5.6.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'UserName' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 14,
+                  "endLine": 30,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 14,
+                  "endLine": 42,
+                  "endColumn": 24
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 14,
+                  "endLine": 52,
+                  "endColumn": 24
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 74,
+                  "startColumn": 14,
+                  "endLine": 74,
+                  "endColumn": 24
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 85,
+                  "startColumn": 14,
+                  "endLine": 85,
+                  "endColumn": 24
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 14,
+                  "endLine": 95,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'SupportEmail' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 14,
+                  "endLine": 33,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 45,
+                  "startColumn": 14,
+                  "endLine": 45,
+                  "endColumn": 28
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 14,
+                  "endLine": 54,
+                  "endColumn": 28
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 79,
+                  "startColumn": 14,
+                  "endLine": 79,
+                  "endColumn": 28
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 14,
+                  "endLine": 89,
+                  "endColumn": 28
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 98,
+                  "startColumn": 14,
+                  "endLine": 98,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'smartphones' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 141,
+                  "startColumn": 31,
+                  "endLine": 141,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 26,
+                  "endLine": 142,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 143,
+                  "startColumn": 22,
+                  "endLine": 143,
+                  "endColumn": 35
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 26,
+                  "endLine": 144,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 26,
+                  "endLine": 145,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 26,
+                  "endLine": 146,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'brand' 7 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 41,
+                  "endLine": 142,
+                  "endColumn": 48
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 37,
+                  "endLine": 149,
+                  "endColumn": 44
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 39,
+                  "endLine": 156,
+                  "endColumn": 46
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 41,
+                  "endLine": 163,
+                  "endColumn": 48
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 177,
+                  "startColumn": 44,
+                  "endLine": 177,
+                  "endColumn": 51
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 43,
+                  "endLine": 185,
+                  "endColumn": 50
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 44,
+                  "endLine": 192,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Brand' 7 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 142,
+                  "startColumn": 50,
+                  "endLine": 142,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 46,
+                  "endLine": 149,
+                  "endColumn": 53
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 48,
+                  "endLine": 156,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 50,
+                  "endLine": 163,
+                  "endColumn": 57
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 177,
+                  "startColumn": 53,
+                  "endLine": 177,
+                  "endColumn": 60
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 52,
+                  "endLine": 185,
+                  "endColumn": 59
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 53,
+                  "endLine": 192,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'condition' 11 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 41,
+                  "endLine": 145,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 43,
+                  "endLine": 160,
+                  "endColumn": 54
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 45,
+                  "endLine": 167,
+                  "endColumn": 56
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 39,
+                  "endLine": 174,
+                  "endColumn": 50
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 181,
+                  "startColumn": 48,
+                  "endLine": 181,
+                  "endColumn": 59
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 47,
+                  "endLine": 188,
+                  "endColumn": 58
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 48,
+                  "endLine": 195,
+                  "endColumn": 59
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 216,
+                  "startColumn": 44,
+                  "endLine": 216,
+                  "endColumn": 55
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 222,
+                  "startColumn": 41,
+                  "endLine": 222,
+                  "endColumn": 52
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 43,
+                  "endLine": 230,
+                  "endColumn": 54
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 237,
+                  "startColumn": 39,
+                  "endLine": 237,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null,
+              "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'Condition' 11 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 54,
+                  "endLine": 145,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 56,
+                  "endLine": 160,
+                  "endColumn": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 58,
+                  "endLine": 167,
+                  "endColumn": 69
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 52,
+                  "endLine": 174,
+                  "endColumn": 63
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 181,
+                  "startColumn": 61,
+                  "endLine": 181,
+                  "endColumn": 72
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 60,
+                  "endLine": 188,
+                  "endColumn": 71
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 61,
+                  "endLine": 195,
+                  "endColumn": 72
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 216,
+                  "startColumn": 57,
+                  "endLine": 216,
+                  "endColumn": 68
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 222,
+                  "startColumn": 54,
+                  "endLine": 222,
+                  "endColumn": 65
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 56,
+                  "endLine": 230,
+                  "endColumn": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 237,
+                  "startColumn": 52,
+                  "endLine": 237,
+                  "endColumn": 63
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null,
+              "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'laptops' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 148,
+                  "startColumn": 31,
+                  "endLine": 148,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 149,
+                  "startColumn": 26,
+                  "endLine": 149,
+                  "endColumn": 35
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 150,
+                  "startColumn": 22,
+                  "endLine": 150,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 26,
+                  "endLine": 151,
+                  "endColumn": 35
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 152,
+                  "startColumn": 22,
+                  "endLine": 152,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 25,
+                  "endLine": 153,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'mens_clothing' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 27,
+                  "endLine": 155,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 22,
+                  "endLine": 156,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 26,
+                  "endLine": 157,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 22,
+                  "endLine": 158,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 22,
+                  "endLine": 159,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 26,
+                  "endLine": 160,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'womens_clothing' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 162,
+                  "startColumn": 27,
+                  "endLine": 162,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 22,
+                  "endLine": 163,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 164,
+                  "startColumn": 26,
+                  "endLine": 164,
+                  "endColumn": 43
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 165,
+                  "startColumn": 22,
+                  "endLine": 165,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 26,
+                  "endLine": 166,
+                  "endColumn": 43
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 26,
+                  "endLine": 167,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'furniture' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 24,
+                  "endLine": 169,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 170,
+                  "startColumn": 26,
+                  "endLine": 170,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 171,
+                  "startColumn": 26,
+                  "endLine": 171,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 172,
+                  "startColumn": 22,
+                  "endLine": 172,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 22,
+                  "endLine": 173,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 26,
+                  "endLine": 174,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'kitchen_appliances' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 176,
+                  "startColumn": 24,
+                  "endLine": 176,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 177,
+                  "startColumn": 22,
+                  "endLine": 177,
+                  "endColumn": 42
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 26,
+                  "endLine": 178,
+                  "endColumn": 46
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 179,
+                  "startColumn": 24,
+                  "endLine": 179,
+                  "endColumn": 44
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 180,
+                  "startColumn": 22,
+                  "endLine": 180,
+                  "endColumn": 42
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 181,
+                  "startColumn": 26,
+                  "endLine": 181,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'fitness_equipment' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 183,
+                  "startColumn": 26,
+                  "endLine": 183,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 184,
+                  "startColumn": 26,
+                  "endLine": 184,
+                  "endColumn": 45
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 22,
+                  "endLine": 185,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 186,
+                  "startColumn": 24,
+                  "endLine": 186,
+                  "endColumn": 43
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 187,
+                  "startColumn": 22,
+                  "endLine": 187,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 26,
+                  "endLine": 188,
+                  "endColumn": 45
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'outdoor_recreation' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 190,
+                  "startColumn": 26,
+                  "endLine": 190,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 191,
+                  "startColumn": 26,
+                  "endLine": 191,
+                  "endColumn": 46
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 192,
+                  "startColumn": 22,
+                  "endLine": 192,
+                  "endColumn": 42
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 193,
+                  "startColumn": 22,
+                  "endLine": 193,
+                  "endColumn": 42
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 194,
+                  "startColumn": 22,
+                  "endLine": 194,
+                  "endColumn": 42
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 26,
+                  "endLine": 195,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'motorcycles' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 204,
+                  "startColumn": 28,
+                  "endLine": 204,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 205,
+                  "startColumn": 22,
+                  "endLine": 205,
+                  "endColumn": 35
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 206,
+                  "startColumn": 22,
+                  "endLine": 206,
+                  "endColumn": 35
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 207,
+                  "startColumn": 24,
+                  "endLine": 207,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 208,
+                  "startColumn": 24,
+                  "endLine": 208,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 209,
+                  "startColumn": 26,
+                  "endLine": 209,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'action_figures' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 211,
+                  "startColumn": 24,
+                  "endLine": 211,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 212,
+                  "startColumn": 22,
+                  "endLine": 212,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 213,
+                  "startColumn": 22,
+                  "endLine": 213,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 214,
+                  "startColumn": 26,
+                  "endLine": 214,
+                  "endColumn": 42
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 215,
+                  "startColumn": 26,
+                  "endLine": 215,
+                  "endColumn": 42
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 216,
+                  "startColumn": 26,
+                  "endLine": 216,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'board_games' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 218,
+                  "startColumn": 24,
+                  "endLine": 218,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 219,
+                  "startColumn": 22,
+                  "endLine": 219,
+                  "endColumn": 35
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 220,
+                  "startColumn": 26,
+                  "endLine": 220,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 221,
+                  "startColumn": 26,
+                  "endLine": 221,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 222,
+                  "startColumn": 26,
+                  "endLine": 222,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 223,
+                  "startColumn": 25,
+                  "endLine": 223,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'fiction_books' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 225,
+                  "startColumn": 25,
+                  "endLine": 225,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 226,
+                  "startColumn": 22,
+                  "endLine": 226,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 227,
+                  "startColumn": 26,
+                  "endLine": 227,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 228,
+                  "startColumn": 26,
+                  "endLine": 228,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 229,
+                  "startColumn": 22,
+                  "endLine": 229,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 26,
+                  "endLine": 230,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'textbooks' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 232,
+                  "startColumn": 25,
+                  "endLine": 232,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 233,
+                  "startColumn": 26,
+                  "endLine": 233,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 234,
+                  "startColumn": 22,
+                  "endLine": 234,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 235,
+                  "startColumn": 22,
+                  "endLine": 235,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 236,
+                  "startColumn": 22,
+                  "endLine": 236,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 237,
+                  "startColumn": 26,
+                  "endLine": 237,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'trading_cards' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 239,
+                  "startColumn": 32,
+                  "endLine": 239,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 240,
+                  "startColumn": 26,
+                  "endLine": 240,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 241,
+                  "startColumn": 22,
+                  "endLine": 241,
+                  "endColumn": 37
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 242,
+                  "startColumn": 24,
+                  "endLine": 242,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 243,
+                  "startColumn": 26,
+                  "endLine": 243,
+                  "endColumn": 41
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 244,
+                  "startColumn": 26,
+                  "endLine": 244,
+                  "endColumn": 41
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal 'coins' 6 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 246,
+                  "startColumn": 32,
+                  "endLine": 246,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 22,
+                  "endLine": 247,
+                  "endColumn": 29
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 248,
+                  "startColumn": 24,
+                  "endLine": 248,
+                  "endColumn": 31
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 249,
+                  "startColumn": 22,
+                  "endLine": 249,
+                  "endColumn": 29
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 250,
+                  "startColumn": 26,
+                  "endLine": 250,
+                  "endColumn": 33
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 251,
+                  "startColumn": 26,
+                  "endLine": 251,
+                  "endColumn": 33
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null
+            }
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 21 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 30,
+                  "endLine": 13,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 9,
+                  "endLine": 19,
+                  "endColumn": 16
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 87,
+                  "endLine": 22,
+                  "endColumn": 89
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 13,
+                  "endLine": 24,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 13,
+                  "endLine": 40,
+                  "endColumn": 17
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 9,
+                  "endLine": 57,
+                  "endColumn": 16
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 13,
+                  "endLine": 61,
+                  "endColumn": 20
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 64,
+                  "startColumn": 82,
+                  "endLine": 64,
+                  "endColumn": 84
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 17,
+                  "endLine": 66,
+                  "endColumn": 19
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 17,
+                  "endLine": 93,
+                  "endColumn": 21
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 17,
+                  "endLine": 99,
+                  "endColumn": 24
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 21,
+                  "endLine": 102,
+                  "endColumn": 23
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 21,
+                  "endLine": 115,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+1",
+              "10": "+4 (incl 3 for nesting)",
+              "11": "+1",
+              "2": "+2 (incl 1 for nesting)",
+              "3": "+1",
+              "4": "+1",
+              "5": "+2 (incl 1 for nesting)",
+              "6": "+1",
+              "7": "+3 (incl 2 for nesting)",
+              "8": "+1",
+              "9": "+3 (incl 2 for nesting)"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260511141704_AddListingViews.cs",
+                "region": {
+                  "startLine": 52,
+                  "startColumn": 26,
+                  "endLine": 52,
+                  "endColumn": 60
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260511141704_AddListingViews.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 26,
+                  "endLine": 57,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S4790",
+          "level": "warning",
+          "message": "Make sure this weak hash algorithm is not used in a sensitive context here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/ListingAndUserSeeder.cs",
+                "region": {
+                  "startLine": 466,
+                  "startColumn": 21,
+                  "endLine": 466,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1172",
+          "level": "warning",
+          "message": "Remove this unused method parameter 'ct'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Services/SmtpEmailService.cs",
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 83,
+                  "endLine": 133,
+                  "endColumn": 103
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "IsRemovable": "True"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260509071505_Phase2_AuthAndBusinessProfile.cs",
+                "region": {
+                  "startLine": 111,
+                  "startColumn": 26,
+                  "endLine": 111,
+                  "endColumn": 173
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "S2068",
+          "level": "warning",
+          "message": "\"password\" detected here, make sure this is not a hard-coded credential.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Configurations/UserConfiguration.cs",
+                "region": {
+                  "startLine": 59,
+                  "startColumn": 13,
+                  "endLine": 59,
+                  "endColumn": 90
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 8 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 280,
+                  "startColumn": 41,
+                  "endLine": 288,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 8 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 258,
+                  "startColumn": 38,
+                  "endLine": 266,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 8 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 269,
+                  "startColumn": 40,
+                  "endLine": 277,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S4790",
+          "level": "warning",
+          "message": "Make sure this weak hash algorithm is not used in a sensitive context here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Data/Seed/CategoryFormSeeder.cs",
+                "region": {
+                  "startLine": 322,
+                  "startColumn": 21,
+                  "endLine": 322,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260512065003_Phase5_EmailTemplatesAndApprovalWorkflow.cs",
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 26,
+                  "endLine": 119,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260512065003_Phase5_EmailTemplatesAndApprovalWorkflow.cs",
+                "region": {
+                  "startLine": 139,
+                  "startColumn": 26,
+                  "endLine": 139,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260509084222_Phase4_DynamicCategoriesAndListings.cs",
+                "region": {
+                  "startLine": 166,
+                  "startColumn": 26,
+                  "endLine": 166,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260509084222_Phase4_DynamicCategoriesAndListings.cs",
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 26,
+                  "endLine": 173,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260509084222_Phase4_DynamicCategoriesAndListings.cs",
+                "region": {
+                  "startLine": 190,
+                  "startColumn": 26,
+                  "endLine": 190,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260509063214_InitialCreate.cs",
+                "region": {
+                  "startLine": 267,
+                  "startColumn": 26,
+                  "endLine": 267,
+                  "endColumn": 160
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1861",
+          "level": "note",
+          "message": "Prefer 'static readonly' fields over constant array arguments if the called method is called repeatedly and is not mutating the passed array",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.Infrastructure/Migrations/20260509063214_InitialCreate.cs",
+                "region": {
+                  "startLine": 282,
+                  "startColumn": 26,
+                  "endLine": 282,
+                  "endColumn": 212
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "paramName": "columns"
+            }
+          }
+        }
+      ],
+      "rules": {
+        "CA1861": {
+          "id": "CA1861",
+          "shortDescription": "Avoid constant arrays as arguments",
+          "fullDescription": "Constant arrays passed as arguments are not reused when called repeatedly, which implies a new array is created each time. Consider extracting them to 'static readonly' fields to improve performance if the passed array is not mutated within the called method.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1861",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "S107": {
+          "id": "S107",
+          "shortDescription": "Methods should not have too many parameters",
+          "fullDescription": "Methods with a long parameter list are difficult to use because maintainers must figure out the role of each parameter and keep track of their position.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1172": {
+          "id": "S1172",
+          "shortDescription": "Unused method parameters should be removed",
+          "fullDescription": "A typical code smell known as unused function parameters refers to parameters declared in a function but not used anywhere within the function’s body. While this might seem harmless at first glance, it can lead to confusion and potential errors in your code. Disregarding the values passed to such parameters, the function’s behavior will be the same, but the programmer’s intention won’t be clearly expressed anymore. Therefore, removing function parameters that are not being utilized is considered best practice.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring complex and error-prone, as any change would need to be propagated on all occurrences.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2068": {
+          "id": "S2068",
+          "shortDescription": "Credentials should not be hard-coded",
+          "fullDescription": "Hard-coding credentials in source code or binaries makes it easy for attackers to extract sensitive information, especially in distributed or open-source applications. This practice exposes your application to significant security risks.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Vulnerability",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3776": {
+          "id": "S3776",
+          "shortDescription": "Cognitive Complexity of methods should not be too high",
+          "fullDescription": "This rule raises an issue when the code cognitive complexity of a function is above a certain threshold.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S4790": {
+          "id": "S4790",
+          "shortDescription": "Using weak hashing algorithms is security-sensitive",
+          "fullDescription": "Cryptographic hash algorithms such as MD2, MD4, MD5, MD6, HAVAL-128, DSA (which uses SHA-1), RIPEMD, RIPEMD-128, RIPEMD-160and SHA-1 are no longer considered secure, because it is possible to have collisions (little computational effort is enough to find two or more different inputs that produce the same hash).",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Critical Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

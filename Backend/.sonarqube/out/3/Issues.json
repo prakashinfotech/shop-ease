@@ -1,0 +1,623 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "5.6.0.0",
+        "fileVersion": "5.6.0-2.26230.102 (caa81fa4971f74880cdab61990cb1b11420939ec)",
+        "semanticVersion": "5.6.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 9 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 90,
+                  "endLine": 36,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S107",
+          "level": "warning",
+          "message": "Method has 8 parameters, which is greater than the 7 authorized.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 96,
+                  "endLine": 63,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6964",
+          "level": "warning",
+          "message": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Models/FileUploadModels.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 25,
+                  "endLine": 16,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S6960",
+          "level": "warning",
+          "message": "This controller has multiple responsibilities and could be split into 6 smaller controllers.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 14,
+                  "endLine": 17,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 37,
+                  "endLine": 51,
+                  "endColumn": 49
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 37,
+                  "endLine": 44,
+                  "endColumn": 48
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 50,
+                  "endLine": 117,
+                  "endColumn": 63
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 91,
+                  "startColumn": 78,
+                  "endLine": 91,
+                  "endColumn": 94
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 85,
+                  "endLine": 58,
+                  "endColumn": 96
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 83,
+                  "endLine": 71,
+                  "endColumn": 92
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 70,
+                  "endLine": 27,
+                  "endColumn": 78
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 82,
+                  "endLine": 31,
+                  "endColumn": 90
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 95,
+                  "startColumn": 67,
+                  "endLine": 95,
+                  "endColumn": 81
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 89,
+                  "endLine": 113,
+                  "endColumn": 107
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 67,
+                  "endLine": 104,
+                  "endColumn": 80
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 50,
+                  "endLine": 144,
+                  "endColumn": 63
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 151,
+                  "startColumn": 50,
+                  "endLine": 151,
+                  "endColumn": 63
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 139,
+                  "startColumn": 81,
+                  "endLine": 139,
+                  "endColumn": 95
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 85,
+                  "endLine": 130,
+                  "endColumn": 96
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 124,
+                  "startColumn": 93,
+                  "endLine": 124,
+                  "endColumn": 112
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 159,
+                  "startColumn": 75,
+                  "endLine": 159,
+                  "endColumn": 96
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/AdminController.cs",
+                "region": {
+                  "startLine": 83,
+                  "startColumn": 65,
+                  "endLine": 83,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "May belong to responsibility #1.",
+              "1": "May belong to responsibility #1.",
+              "10": "May belong to responsibility #3.",
+              "11": "May belong to responsibility #4.",
+              "12": "May belong to responsibility #4.",
+              "13": "May belong to responsibility #4.",
+              "14": "May belong to responsibility #4.",
+              "15": "May belong to responsibility #5.",
+              "16": "May belong to responsibility #5.",
+              "17": "May belong to responsibility #6.",
+              "2": "May belong to responsibility #2.",
+              "3": "May belong to responsibility #2.",
+              "4": "May belong to responsibility #2.",
+              "5": "May belong to responsibility #2.",
+              "6": "May belong to responsibility #2.",
+              "7": "May belong to responsibility #2.",
+              "8": "May belong to responsibility #3.",
+              "9": "May belong to responsibility #3."
+            }
+          }
+        },
+        {
+          "ruleId": "S6960",
+          "level": "warning",
+          "message": "This controller has multiple responsibilities and could be split into 2 smaller controllers.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 14,
+                  "endLine": 15,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 72,
+                  "endLine": 29,
+                  "endColumn": 84
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 67,
+                  "endLine": 80,
+                  "endColumn": 73
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 118,
+                  "startColumn": 50,
+                  "endLine": 118,
+                  "endColumn": 56
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 80,
+                  "endLine": 21,
+                  "endColumn": 86
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 67,
+                  "endLine": 62,
+                  "endColumn": 74
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 37,
+                  "startColumn": 72,
+                  "endLine": 37,
+                  "endColumn": 81
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 80,
+                  "endLine": 70,
+                  "endColumn": 93
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 82,
+                  "endLine": 46,
+                  "endColumn": 99
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 18,
+                  "endLine": 161,
+                  "endColumn": 27
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 89,
+                  "endLine": 155,
+                  "endColumn": 100
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 50,
+                  "endLine": 55,
+                  "endColumn": 60
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 127,
+                  "startColumn": 67,
+                  "endLine": 127,
+                  "endColumn": 74
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 67,
+                  "endLine": 137,
+                  "endColumn": 73
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 50,
+                  "endLine": 146,
+                  "endColumn": 62
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 67,
+                  "endLine": 108,
+                  "endColumn": 73
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/ListingsController.cs",
+                "region": {
+                  "startLine": 92,
+                  "startColumn": 78,
+                  "endLine": 92,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "May belong to responsibility #1.",
+              "1": "May belong to responsibility #1.",
+              "10": "May belong to responsibility #1.",
+              "11": "May belong to responsibility #1.",
+              "12": "May belong to responsibility #1.",
+              "13": "May belong to responsibility #1.",
+              "14": "May belong to responsibility #1.",
+              "15": "May belong to responsibility #2.",
+              "2": "May belong to responsibility #1.",
+              "3": "May belong to responsibility #1.",
+              "4": "May belong to responsibility #1.",
+              "5": "May belong to responsibility #1.",
+              "6": "May belong to responsibility #1.",
+              "7": "May belong to responsibility #1.",
+              "8": "May belong to responsibility #1.",
+              "9": "May belong to responsibility #1."
+            }
+          }
+        },
+        {
+          "ruleId": "S5693",
+          "level": "warning",
+          "message": "Make sure the content length limit is safe here.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///E:/ebay-clone-one/Backend/src/EBayClone.API/Controllers/BusinessProfileController.cs",
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 6,
+                  "endLine": 51,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S107": {
+          "id": "S107",
+          "shortDescription": "Methods should not have too many parameters",
+          "fullDescription": "Methods with a long parameter list are difficult to use because maintainers must figure out the role of each parameter and keep track of their position.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S5693": {
+          "id": "S5693",
+          "shortDescription": "Allowing requests with excessive content length is security-sensitive",
+          "fullDescription": "Rejecting requests with significant content length is a good practice to control the network traffic intensity and thus resource consumption in order to prevent DoS attacks.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Security Hotspot",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6960": {
+          "id": "S6960",
+          "shortDescription": "Controllers should not have mixed responsibilities",
+          "fullDescription": "ASP.NET controllers should not have mixed responsibilities. Following the Single Responsibility Principle (SRP), they should be kept lean and focused on a single, separate concern. In short, they should have a single reason to change.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S6964": {
+          "id": "S6964",
+          "shortDescription": "Value type property used as input in a controller action should be nullable, required or annotated with the JsonRequiredAttribute to avoid under-posting.",
+          "fullDescription": "\"Under-posting\" refers to a situation where a client sends less data than expected to the server during an HTTP request, for example when the client omits some properties from the request body that the server expects to receive.",
+          "defaultLevel": "warning",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
