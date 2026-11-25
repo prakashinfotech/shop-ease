@@ -58,6 +58,10 @@ services:
 
       CorsSettings__AllowedOrigins: "${FRONTEND_URL}"
 
+      # Links in emails (verification, password reset, listing approval) are built from
+      # this; without it those services throw "AppSettings:FrontendUrl is not configured".
+      AppSettings__FrontendUrl: "${FRONTEND_URL}"
+
     ports:
       - "127.0.0.1:5001:8080"
 
